@@ -1,0 +1,5 @@
+gradio
+langchain-ollama
+python-dotenv
+torch
+transformers
