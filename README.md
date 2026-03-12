@@ -254,12 +254,15 @@ High-performance C/C++ inference engine. Runs GGUF-quantized models and can spli
 - [Server documentation](https://github.com/ggml-org/llama.cpp/blob/master/examples/server/README.md)
 
 ```bash
-# Build from source with CUDA support
+# Build from source with CUDA support (compiles for your GPU automatically)
 git clone https://github.com/ggml-org/llama.cpp.git
 cd llama.cpp
 cmake -B build -DGGML_CUDA=ON
-cmake --build build --config Release -j
+cmake --build build --config Release -j$(nproc)
 ```
+
+> **Note**: The build compiles CUDA kernels for the GPU(s) detected on your machine.
+> This takes several minutes but only needs to be done once. If you change GPUs, rebuild.
 
 ```bash
 # Start the server with CPU/GPU MoE split
