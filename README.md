@@ -33,7 +33,7 @@ This repository provides hands-on examples and learning resources for working wi
 - Terminal chatbot with llama.cpp + OpenAI client
 - Web UI chatbot with Gradio (multi-backend)
 - Direct model loading with HuggingFace Transformers
-- ReAct agent with tool use and reasoning visualization
+- ReAct agent with tool use (2 versions: built-in framework + manual implementation)
 
 **Slides** (4 lessons):
 - State of the art in generative AI

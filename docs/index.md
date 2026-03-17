@@ -9,8 +9,8 @@ Example code demonstrating local LLM inference with various backends and librari
 :caption: Contents
 
 quickstart
-demos
 slides
+demos
 activities
 inference_servers
 libraries
