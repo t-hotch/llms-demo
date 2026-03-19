@@ -139,8 +139,8 @@ python demos/chatbots/gradio_chatbot.py
 ## Demo 5: ReAct agent chatbot
 
 **Files:** 
-- `demos/react_agent_chatbot.py` - Uses LangChain's agent framework
-- `demos/react_agent_chatbot_manual.py` - Manual implementation from scratch
+- `demos/langchain_patterns/react_agent_chatbot.py` - Uses LangChain's agent framework
+- `demos/langchain_patterns/react_agent_chatbot_manual.py` - Manual implementation from scratch
 
 **Concepts covered:**
 - ReAct (Reasoning + Acting) agent pattern
@@ -180,7 +180,7 @@ ollama serve
 ollama pull qwen2.5:3b
 
 # 3. Run the ReAct agent chatbot
-python demos/react_agent_chatbot.py
+python demos/langchain_patterns/react_agent_chatbot.py
 
 # 4. Open the URL shown in the terminal (usually http://127.0.0.1:7860)
 ```
@@ -189,7 +189,7 @@ python demos/react_agent_chatbot.py
 
 ```bash
 # Same setup as Version 1, but run:
-python demos/react_agent_chatbot_manual.py
+python demos/langchain_patterns/react_agent_chatbot_manual.py
 
 # This version shows explicit Thought → Action → Observation cycles
 ```
@@ -210,7 +210,7 @@ python demos/react_agent_chatbot_manual.py
 
 ## Demo 6: LangChain basics
 
-**File:** `demos/langchain_demo.py`
+**File:** `demos/langchain_patterns/langchain_demo.py`
 
 **Concepts covered:**
 - Chat models and LLM wrappers
@@ -234,7 +234,7 @@ ollama serve
 ollama pull qwen2.5:3b
 
 # 3. Run the LangChain demo
-python demos/langchain_demo.py
+python demos/langchain_patterns/langchain_demo.py
 
 # 4. Open the URL shown in the terminal (usually http://127.0.0.1:7860)
 ```

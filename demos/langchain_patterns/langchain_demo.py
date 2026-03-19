@@ -12,7 +12,7 @@ The demo uses Gradio to provide an interactive interface where you can:
 - Experiment with chained operations
 
 Usage:
-    python demos/langchain_demo.py
+    python demos/langchain_patterns/langchain_demo.py
 """
 
 import os

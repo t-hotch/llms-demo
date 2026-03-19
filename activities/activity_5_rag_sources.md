@@ -33,7 +33,7 @@ By the end of this activity you will have implemented a `FileIngestor` that lets
 Make sure your LLM backend is running (Ollama or llama.cpp), then:
 
 ```bash
-python demos/rag_demo.py
+python demos/rag_system/rag_demo.py
 ```
 
 Open the Gradio interface and confirm the **Ingest** tab shows "Wikipedia" as the only source.
@@ -58,13 +58,13 @@ from ingestors import WikipediaIngestor
 
 ### Step 1: Read the base interface
 
-Open `demos/ingestors/base.py`. Note:
+Open `demos/rag_system/ingestors/base.py`. Note:
 - `source_type` — a property returning the display name shown in the UI radio button
 - `load(source)` — the only method you need to implement; returns a list of `Document` objects
 
 ### Step 2: Read the Wikipedia ingestor
 
-Open `demos/ingestors/wikipedia.py`. The full implementation is only ~25 lines:
+Open `demos/rag_system/ingestors/wikipedia.py`. The full implementation is only ~25 lines:
 - It wraps `WikipediaLoader` to fetch articles by search query
 - It passes the raw documents through `RecursiveCharacterTextSplitter` so they become small chunks
 
@@ -94,7 +94,7 @@ print(f"\nMetadata: {docs[0].metadata}")
 
 ### Step 1: Create the ingestor file
 
-Create `demos/ingestors/file.py`:
+Create `demos/rag_system/ingestors/file.py`:
 
 ```python
 """File ingestor — loads local .txt and .md files."""
@@ -136,7 +136,7 @@ class FileIngestor(BaseIngestor):
 
 ### Step 2: Export it from the package
 
-Open `demos/ingestors/__init__.py` and add your new class:
+Open `demos/rag_system/ingestors/__init__.py` and add your new class:
 
 ```python
 from .base import BaseIngestor
@@ -192,7 +192,7 @@ for doc in docs:
 
 ## Part 3: Register the ingestor in the demo
 
-### Step 1: Open `demos/rag_demo.py`
+### Step 1: Open `demos/rag_system/rag_demo.py`
 
 Find the `INGESTORS` dictionary near the top of the file:
 
@@ -217,7 +217,7 @@ INGESTORS = {
 
 ### Step 3: Verify in the UI
 
-Restart the demo (`python demos/rag_demo.py`). You should see a new **"Files"** option in the ingestor radio on the Ingest tab. Select it, enter a directory path (e.g. `data/docs`), and click Ingest.
+Restart the demo (`python demos/rag_system/rag_demo.py`). You should see a new **"Files"** option in the ingestor radio on the Ingest tab. Select it, enter a directory path (e.g. `data/docs`), and click Ingest.
 
 Then switch to the Query tab and ask a question about the content of your files.
 
@@ -229,7 +229,7 @@ Then switch to the Query tab and ask a question about the content of your files.
 
 ### Skeleton
 
-Create `demos/ingestors/url.py`:
+Create `demos/rag_system/ingestors/url.py`:
 
 ```python
 """URL ingestor — loads a web page from a given URL."""

@@ -10,7 +10,7 @@ Architecture:
     Question → Retriever → Context → Prompt → LLM → Answer
 
 Usage:
-    python demos/rag_demo.py
+    python demos/rag_system/rag_demo.py
 
 Environment variables:
     DATABASE_URL  PostgreSQL connection string with pgvector enabled
@@ -269,7 +269,7 @@ with gr.Blocks(title="RAG Knowledge System") as demo:
                         choices=list(INGESTORS.keys()),
                         value=list(INGESTORS.keys())[0],
                         label="Document source",
-                        info="Students: add new sources in demos/ingestors/ and register them in INGESTORS above.",
+                        info="Students: add new sources in demos/rag_system/ingestors/ and register them in INGESTORS above.",
                     )
                     with gr.Row():
                         ingest_btn = gr.Button("Ingest", variant="primary")

@@ -22,7 +22,7 @@ Example questions to try:
 - "How many weeks between today and New Year's Day 2027?"
 
 Usage:
-    python demos/react_agent_chatbot_manual.py
+    python demos/langchain_patterns/react_agent_chatbot_manual.py
 """
 
 import os
