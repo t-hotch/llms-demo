@@ -9,7 +9,7 @@
 
 2. Run the chatbot - it will automatically connect to the remote server:
 
-   $ python src/llamacpp_chatbot.py
+   $ python demos/chatbots/llamacpp_chatbot.py
 
 --- Option 2: Build and run the server locally ---
 
@@ -17,7 +17,7 @@ See README.md for instructions on how to build llama.cpp and start the server.
 
 Once the server is running, run the chatbot (no .env needed, defaults to localhost:8502 with API key "dummy"):
 
-   $ python src/llamacpp_chatbot.py
+   $ python demos/chatbots/llamacpp_chatbot.py
 
 ---
 

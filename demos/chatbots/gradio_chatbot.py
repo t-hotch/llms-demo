@@ -7,7 +7,7 @@ This demo provides a web UI where users can:
 - Have multi-turn conversations with context
 
 Usage:
-    python src/gradio_chatbot.py
+    python demos/chatbots/gradio_chatbot.py
 '''
 
 import os

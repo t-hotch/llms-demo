@@ -1,4 +1,4 @@
-# Activity 4: Building LangChain chains
+# Activity 3: Building LangChain chains
 
 ## Objective
 
@@ -41,7 +41,7 @@ cd llama.cpp
 Create a new file `activities/my_langchain_chains.py`:
 
 ```python
-"""Activity 4: Building LangChain chains
+"""Activity 3: Building LangChain chains
 
 Complete the TODO sections to build working chains.
 """
@@ -335,6 +335,6 @@ print(f"\nRecommendations: {analysis['recommendations']}")
 
 - Explore [LangChain documentation](https://python.langchain.com/)
 - Try the **LangChain Expression Language (LCEL)** for more advanced chaining
-- Build a Gradio UI around your chains (see Demo 6)
+- Build a Gradio UI around your chains (see Demo 5)
 - Experiment with **streaming** outputs using `.stream()`
 - Learn about **LangGraph** for more complex agentic workflows

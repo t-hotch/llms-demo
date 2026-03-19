@@ -1,58 +1,34 @@
 # LLM chatbots demo
 
-[![Documentation](https://img.shields.io/badge/docs-github%20pages-blue)](https://gperdrizet.github.io/llms-demo/)
+[![Build and Deploy Documentation](https://github.com/gperdrizet/llms-demo/actions/workflows/docs.yml/badge.svg)](https://github.com/gperdrizet/llms-demo/actions/workflows/docs.yml)
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-0.3-1C3C3C?logo=langchain&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-Transformers-FFD21E?logo=huggingface&logoColor=black)
+![Gradio](https://img.shields.io/badge/Gradio-UI-FF7C00?logo=gradio&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-local%20LLM-black?logo=ollama&logoColor=white)
+![llama.cpp](https://img.shields.io/badge/llama.cpp-GGUF-green)
+![PostgreSQL](https://img.shields.io/badge/pgvector-PostgreSQL-4169E1?logo=postgresql&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-vector%20store-E8572A)
 
 ## Introduction
 
-This repository provides hands-on examples and learning resources for working with large language models (LLMs) in local development environments. It demonstrates practical approaches to prompt engineering, model deployment, and application development.
+This repository provides hands-on examples and learning resources for working with large language models (LLMs) in local development environments.
 
 ### Topics covered
 
-**Inference and deployment:**
-- Local inference servers (Ollama, llama.cpp)
-- CPU/GPU memory management for large models
-- OpenAI-compatible APIs
-- Model quantization (GGUF format)
-
-**Development tools and libraries:**
-- HuggingFace Transformers for direct model loading
-- LangChain for structured LLM applications
-- Gradio for rapid UI prototyping
-- Multi-backend architecture patterns
-
-**Prompting techniques:**
-- Zero-shot and few-shot learning
-- Chain-of-thought reasoning
-- System prompt design
-- Iterative prompt refinement
+- Local inference with Ollama and llama.cpp
+- Direct model loading with HuggingFace Transformers
+- LangChain: prompt templates, output parsers, chains, and agents
+- RAG (Retrieval-Augmented Generation) with pgvector
+- Gradio web interfaces
+- Prompting techniques: zero-shot, few-shot, chain-of-thought, ReAct
 
 ### Resources included
 
-**Demos** (6 chatbot implementations):
-- Terminal chatbot with Ollama + LangChain
-- Terminal chatbot with llama.cpp + OpenAI client
-- Web UI chatbot with Gradio (multi-backend)
-- Direct model loading with HuggingFace Transformers
-- ReAct agent with tool use (2 versions: built-in framework + manual implementation)
-- LangChain basics (prompt templates, output parsers, chains)
-
-**Slides** (5 lessons):
-- State of the art in generative AI
-- LLM deployment strategies
-- Prompting fundamentals
-- Advanced prompting techniques
-- LangChain basics and structured applications
-
-**Activities** (4 hands-on exercises):
-- Word problems with chain-of-thought reasoning
-- Text summarization with document chunking
-- Extending the ReAct agent with custom tools
-- Building LangChain chains with structured outputs
-
-**Models** (3 open-source LLMs):
-- GPT-OSS-120B (120B MoE, reasoning-optimized)
-- GPT-OSS-20B (21B MoE, fast inference)
-- Qwen3.5-35B-A3B (35B MoE with vision)
+- **7 demos**: chatbots, LangChain patterns, and a RAG knowledge system
+- **5 slide decks**: covering deployment, prompting, and LangChain
+- **5 activities**: hands-on exercises building on each demo
+- **3 open-source models**: 20B, 35B, and 120B parameter LLMs
 
 ---
 
@@ -129,7 +105,7 @@ ollama serve
 ollama pull qwen2.5:3b
 
 # 3. Run the chatbot
-python src/ollama_chatbot.py
+python demos/chatbots/ollama_chatbot.py
 ```
 
 For complete instructions on all four demos, visit the [documentation](https://gperdrizet.github.io/llms-demo/).

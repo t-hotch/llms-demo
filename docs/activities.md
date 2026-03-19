@@ -21,7 +21,7 @@ Practice basic prompting techniques and chain-of-thought reasoning by solving wo
 - Familiarity with Lesson 46 (Prompting fundamentals)
 
 **What you'll use:**
-- Gradio chatbot web interface (`src/gradio_chatbot.py`)
+- Gradio chatbot web interface (`demos/chatbots/gradio_chatbot.py`)
 - System prompt customization
 
 **Location:** `activities/activity_1_word_problems.md`
@@ -45,7 +45,7 @@ Build a practical text summarization script applying various prompting technique
 
 **Location:** `activities/activity_2_text_summarization.md`
 
-## Activity 3: Extending the ReAct agent
+## Activity 4: Extending the ReAct agent
 
 Enhance the ReAct agent chatbot by adding custom tools and testing multi-step reasoning.
 
@@ -58,7 +58,7 @@ Enhance the ReAct agent chatbot by adding custom tools and testing multi-step re
 - Multi-step problem solving with tool chaining
 
 **Prerequisites:**
-- Completed Activities 1 and 2
+- Completed Activities 1-3
 - Python programming experience
 - Understanding of Lesson 47 (Advanced prompting - ReAct)
 - Familiarity with the ReAct agent demo
@@ -70,9 +70,9 @@ Enhance the ReAct agent chatbot by adding custom tools and testing multi-step re
 - Test single-tool and multi-tool reasoning
 - Debug and improve your implementation
 
-**Location:** `activities/activity_3_react_agent_tools.md`
+**Location:** `activities/activity_4_react_agent_tools.md`
 
-## Activity 4: Building LangChain chains
+## Activity 3: Building LangChain chains
 
 Build practical LangChain applications using prompt templates, output parsers, and chains.
 
@@ -86,10 +86,10 @@ Build practical LangChain applications using prompt templates, output parsers, a
 - Error handling and debugging chains
 
 **Prerequisites:**
-- Completed Activities 1-3
+- Completed Activities 1 and 2
 - Python programming experience
 - Understanding of Lesson 48 (LangChain basics)
-- Familiarity with Demo 6 (LangChain demo)
+- Familiarity with Demo 5 (LangChain demo)
 
 **What you'll do:**
 - Build a template-based translator chain
@@ -97,5 +97,5 @@ Build practical LangChain applications using prompt templates, output parsers, a
 - Compose a multi-step review analysis pipeline
 - Learn debugging and best practices
 
-**Location:** `activities/activity_4_langchain_chains.md`
+**Location:** `activities/activity_3_langchain_chains.md`
 

@@ -16,7 +16,7 @@ In this activity, you'll create a practical text summarization tool. You'll star
 
 ### Step 1: Create the script
 
-Create a new file: `src/text_summarizer.py`
+Create a new file: `demos/text_summarizer.py`
 
 Start with this template:
 
@@ -24,7 +24,7 @@ Start with this template:
 '''Text summarization using an LLM.
 
 Usage:
-    python src/text_summarizer.py input.txt
+    python demos/text_summarizer.py input.txt
 '''
 
 import sys
@@ -47,7 +47,7 @@ def summarize_text(text, model):
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python src/text_summarizer.py input.txt")
+        print("Usage: python demos/text_summarizer.py input.txt")
         sys.exit(1)
     
     filename = sys.argv[1]
@@ -95,7 +95,7 @@ Prize in Physiology or Medicine for this groundbreaking discovery.
 ### Step 3: Test your basic implementation
 
 ```bash
-python src/text_summarizer.py test_texts/short_article.txt
+python demos/text_summarizer.py test_texts/short_article.txt
 ```
 
 **Observe:**
@@ -169,7 +169,7 @@ Summary:"""
 ```python
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python src/text_summarizer.py input.txt [type]")
+        print("Usage: python demos/text_summarizer.py input.txt [type]")
         print("Types: news, research, technical, general")
         sys.exit(1)
     
@@ -318,8 +318,8 @@ def summarize_long_text(text, model, max_words=100):
 ## Resources
 
 **Example implementations to reference:**
-- `src/ollama_chatbot.py` - Shows LangChain usage
-- `src/llamacpp_chatbot.py` - Shows OpenAI client usage
+- `demos/chatbots/ollama_chatbot.py` - Shows LangChain usage
+- `demos/chatbots/llamacpp_chatbot.py` - Shows OpenAI client usage
 
 **Documentation:**
 - [LangChain Chat Models](https://python.langchain.com/docs/integrations/chat/)

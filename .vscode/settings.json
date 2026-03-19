@@ -21,6 +21,7 @@
         "noctrex",
         "ollama",
         "pgrep",
+        "pgvector",
         "privkey",
         "qwen",
         "worktree"

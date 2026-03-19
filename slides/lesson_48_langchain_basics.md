@@ -75,7 +75,7 @@ We'll explore four core LangChain concepts:
 3. **Output parsers** - Extracting structured data from LLM responses
 4. **Basic chains** - Composing multiple steps into workflows
 
-After the slides: **Demo 6** will show these concepts in action, then **Activity 4** for hands-on practice.
+After the slides: **Demo 5** will show these concepts in action, then **Activity 3** for hands-on practice.
 
 ---
 
@@ -350,8 +350,8 @@ More complex compositions use **RunnableSequence** (advanced topic).
 4. **Basic chains** - Compose components into workflows with LCEL
 
 **Next steps:**
-1. **Demo 6:** See these concepts in a working application
-2. **Activity 4:** Build your own LangChain chains
+1. **Demo 5:** See these concepts in a working application
+2. **Activity 3:** Build your own LangChain chains
 
 ---
 
@@ -370,6 +370,6 @@ More complex compositions use **RunnableSequence** (advanced topic).
 
 # Questions?
 
-**Next:** Demo 6 - LangChain in action
+**Next:** Demo 5 - LangChain in action
 
-Then: Activity 4 - Build your own chains
+Then: Activity 3 - Build your own chains

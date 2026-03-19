@@ -4,7 +4,7 @@ This repository includes six chatbot demos that demonstrate different approaches
 
 ## Demo 1: HuggingFace chatbot
 
-**File:** `src/huggingface_chatbot.py`
+**File:** `demos/chatbots/huggingface_chatbot.py`
 
 **Concepts covered:**
 - Direct model loading (no inference server)
@@ -20,7 +20,7 @@ This repository includes six chatbot demos that demonstrate different approaches
 
 ```bash
 # 1. Run the chatbot (downloads model on first run)
-python src/huggingface_chatbot.py
+python demos/chatbots/huggingface_chatbot.py
 
 # Note: This loads the model directly into memory (no inference server needed).
 # First run will download approximately 6GB of model files to models/hugging_face/
@@ -28,7 +28,7 @@ python src/huggingface_chatbot.py
 
 ## Demo 2: Ollama chatbot
 
-**File:** `src/ollama_chatbot.py`
+**File:** `demos/chatbots/ollama_chatbot.py`
 
 **Concepts covered:**
 - Using a local inference server (Ollama)
@@ -50,12 +50,12 @@ ollama serve
 ollama pull qwen2.5:3b
 
 # 3. Run the chatbot
-python src/ollama_chatbot.py
+python demos/chatbots/ollama_chatbot.py
 ```
 
 ## Demo 3: llama.cpp chatbot
 
-**File:** `src/llamacpp_chatbot.py`
+**File:** `demos/chatbots/llamacpp_chatbot.py`
 
 **Concepts covered:**
 - Running large MoE models (120B+ parameters) on consumer hardware
@@ -82,7 +82,7 @@ cp .env.example .env
 #    PERDRIZET_API_KEY=your-api-key-here
 
 # 3. Run the chatbot
-python src/llamacpp_chatbot.py
+python demos/chatbots/llamacpp_chatbot.py
 ```
 
 **Option 2: Running llama.cpp locally**
@@ -101,14 +101,14 @@ cd ..
 llama.cpp/build/bin/llama-server -m <model.gguf> <flags...>
 
 # 4. Run the chatbot (in another terminal)
-python src/llamacpp_chatbot.py
+python demos/chatbots/llamacpp_chatbot.py
 ```
 
 > **Note**: For localhost, the defaults work automatically (localhost:8502 with "dummy" API key). For remote servers, configure `PERDRIZET_URL` and `PERDRIZET_API_KEY` in your `.env` file.
 
 ## Demo 4: Gradio chatbot
 
-**File:** `src/gradio_chatbot.py`
+**File:** `demos/chatbots/gradio_chatbot.py`
 
 **Concepts covered:**
 - Web-based chat interfaces
@@ -131,16 +131,16 @@ ollama serve
 ollama pull qwen2.5:3b
 
 # 3. Run the Gradio chatbot
-python src/gradio_chatbot.py
+python demos/chatbots/gradio_chatbot.py
 
 # 4. Open the URL shown in the terminal (usually http://127.0.0.1:7860)
 ```
 
-## Demo 5: ReAct agent chatbot
+## Demo 6: ReAct agent chatbot
 
 **Files:** 
-- `src/react_agent_chatbot.py` - Uses LangChain's agent framework
-- `src/react_agent_chatbot_manual.py` - Manual implementation from scratch
+- `demos/langchain_patterns/react_agent_chatbot.py` - Uses LangChain's agent framework
+- `demos/langchain_patterns/react_agent_chatbot_manual.py` - Manual implementation from scratch
 
 **Concepts covered:**
 - ReAct (Reasoning + Acting) agent pattern
@@ -180,7 +180,7 @@ ollama serve
 ollama pull qwen2.5:3b
 
 # 3. Run the ReAct agent chatbot
-python src/react_agent_chatbot.py
+python demos/langchain_patterns/react_agent_chatbot.py
 
 # 4. Open the URL shown in the terminal (usually http://127.0.0.1:7860)
 ```
@@ -189,7 +189,7 @@ python src/react_agent_chatbot.py
 
 ```bash
 # Same setup as Version 1, but run:
-python src/react_agent_chatbot_manual.py
+python demos/langchain_patterns/react_agent_chatbot_manual.py
 
 # This version shows explicit Thought → Action → Observation cycles
 ```
@@ -208,9 +208,9 @@ python src/react_agent_chatbot_manual.py
 - Try asking multi-step questions that require multiple tool calls
 - **Compare both versions**: Run the same question through both demos to see how the manual implementation exposes the mechanics that LangChain handles automatically
 
-## Demo 6: LangChain basics
+## Demo 5: LangChain basics
 
-**File:** `src/langchain_demo.py`
+**File:** `demos/langchain_patterns/langchain_demo.py`
 
 **Concepts covered:**
 - Chat models and LLM wrappers
@@ -234,7 +234,7 @@ ollama serve
 ollama pull qwen2.5:3b
 
 # 3. Run the LangChain demo
-python src/langchain_demo.py
+python demos/langchain_patterns/langchain_demo.py
 
 # 4. Open the URL shown in the terminal (usually http://127.0.0.1:7860)
 ```

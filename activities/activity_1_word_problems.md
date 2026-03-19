@@ -28,7 +28,7 @@ ollama serve
 # For llama.cpp, see the systemd-deployment docs
 
 # Then start the chatbot:
-python src/gradio_chatbot.py
+python demos/chatbots/gradio_chatbot.py
 ```
 
 **Access the interface:**

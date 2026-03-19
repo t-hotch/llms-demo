@@ -1,4 +1,4 @@
-# Activity 3: Extending the ReAct agent
+# Activity 4: Extending the ReAct agent
 
 **Objective:** Enhance the ReAct agent chatbot by adding custom tools and testing multi-step reasoning with real-world problems.
 
@@ -18,7 +18,7 @@ Before adding a new tool, let's examine how the current tools work.
 
 ### Step 1: Review the tools module
 
-Open `src/tools.py` and examine the three existing tools:
+Open `demos/langchain_patterns/tools.py` and examine the three existing tools:
 
 1. **calculator** - Performs arithmetic calculations
 2. **get_current_date** - Returns today's date
@@ -63,7 +63,7 @@ Run the ReAct agent chatbot:
 ollama serve
 
 # In another terminal, run the agent
-python src/react_agent_chatbot.py
+python demos/langchain_patterns/react_agent_chatbot.py
 ```
 
 Try these questions and observe the reasoning process:
@@ -80,7 +80,7 @@ Try these questions and observe the reasoning process:
 
 ## Part 2: Add a new tool
 
-Now you'll add a new tool to expand the agent's capabilities. You'll need to study the existing tools in `src/tools.py` to understand the pattern, then implement your own.
+Now you'll add a new tool to expand the agent's capabilities. You'll need to study the existing tools in `demos/langchain_patterns/tools.py` to understand the pattern, then implement your own.
 
 ### Learning from existing tools
 
@@ -173,7 +173,7 @@ After creating your tool, you need to add it to the agent's tool list.
 
 ### Step 1: Import your tool
 
-In `src/react_agent_chatbot.py`, find the tool imports section:
+In `demos/langchain_patterns/react_agent_chatbot.py`, find the tool imports section:
 
 ```python
 # Import our tools
@@ -226,7 +226,7 @@ Update it to include your tool:
 Stop the running agent (Ctrl+C) and restart it:
 
 ```bash
-python src/react_agent_chatbot.py
+python demos/langchain_patterns/react_agent_chatbot.py
 ```
 
 ### Step 2: Test individual tool usage
@@ -317,5 +317,5 @@ Once your tool works, try improving it:
 - [LangChain Tools Documentation](https://python.langchain.com/docs/modules/tools/)
 - [Building Custom Tools](https://python.langchain.com/docs/modules/tools/custom_tools)
 - [ReAct Paper](https://arxiv.org/abs/2210.03629) - Original research on ReAct pattern
-- ReAct demo code: `src/react_agent_chatbot.py`
-- Existing tools: `src/tools.py`
+- ReAct demo code: `demos/langchain_patterns/react_agent_chatbot.py`
+- Existing tools: `demos/langchain_patterns/tools.py`
