@@ -356,12 +356,6 @@ This structure keeps the LLM grounded - it must justify each action with explici
 2. **Document pipelines** - load → split → embed → store; retrieve at query time
 3. **Agents** - LLM as decision-maker; ReAct pattern; tools with clear descriptions
 
-**Next steps:**
-1. **Demo 6:** ReAct agent with custom tools
-2. **Demo 7:** RAG pipeline with pgvector
-3. **Activity 4:** Add tools to a ReAct agent
-4. **Activity 5:** Extend the RAG system with a new document source
-
 ---
 
 ## Additional resources
@@ -376,9 +370,3 @@ This structure keeps the LLM grounded - it must justify each action with explici
 **Papers:**
 - [ReAct: Synergizing Reasoning and Acting in Language Models (Yao et al., 2022)](https://arxiv.org/abs/2210.03629)
 - [RAG: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (Lewis et al., 2020)](https://arxiv.org/abs/2005.11401)
-
----
-
-# Questions?
-
-**Next:** Demo 6 - ReAct agent in action, Demo 7 - RAG knowledge system
