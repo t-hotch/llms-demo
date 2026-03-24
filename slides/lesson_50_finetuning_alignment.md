@@ -396,7 +396,7 @@ Objective = E[RM(response)] - β × KL(policy || SFT_model)
 
 ## DPO: Direct Preference Optimization
 
-**DPO** (Rafailov et al., 2023) achieves similar alignment to RLHF without a separate reward model or PPO.
+**DPO** ([Rafailov et al., 2023](https://arxiv.org/abs/2305.18290)) achieves similar alignment to RLHF without a separate reward model or PPO.
 
 **Key insight:** The optimal policy under RLHF has a closed form - you can derive it from preference data directly.
 
@@ -414,7 +414,7 @@ Objective = E[RM(response)] - β × KL(policy || SFT_model)
 
 ## Constitutional AI
 
-**Constitutional AI** (Anthropic, 2022) extends RLHF with an AI-generated feedback loop.
+**Constitutional AI** ([Anthropic, 2022](https://arxiv.org/pdf/2212.08073)) extends RLHF with an AI-generated feedback loop.
 
 **The idea:**
 
@@ -491,6 +491,19 @@ When to fine-tune, and what tools to use
 - [Training language models to follow instructions with human feedback (Ouyang et al., 2022)](https://arxiv.org/abs/2203.02155)
 - [Direct Preference Optimization (Rafailov et al., 2023)](https://arxiv.org/abs/2305.18290)
 - [Constitutional AI (Bai et al., 2022)](https://arxiv.org/abs/2212.08073)
+
+---
+
+## Additional resources cont'd
+
+**Other papers/topics that came up in discussion...**
+- [Self-rewarding language models (Yuan, et al,. 2024), Meta, NYU](https://arxiv.org/abs/2401.10020)
+- [Watermarking (Sander et al., 2024, Meta)](https://arxiv.org/pdf/2402.14904)
+- [Best practices & lessons learned on synthetic data (Liu et al., 2024, Google, Stanford)](https://arxiv.org/abs/2404.07503)
+
+---
+
+## Additional resources cont'd
 
 **Hugging Face:**
 - [PEFT documentation](https://huggingface.co/docs/peft)
